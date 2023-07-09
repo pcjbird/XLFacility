@@ -144,7 +144,9 @@
 
 - (void)_didEnterBackground:(NSNotification*)notification {
   if (_running && _suspendInBackground) {
-    [self stop];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+          [self stop];
+      });
     _restart = YES;
   }
 }
