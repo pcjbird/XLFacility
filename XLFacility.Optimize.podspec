@@ -6,7 +6,7 @@
 # DELETE THIS SECTION BEFORE PROCEEDING!
 
 Pod::Spec.new do |s|
-  s.name     = 'XLFacility.Optimize'
+  s.name     = 'XLFacility'
   s.version  = '1.5.19'
   s.author   =  { 'Pierre-Olivier Latour' => 'info@pol-online.net' }
   s.license  = { :type => 'BSD', :file => 'LICENSE' }
