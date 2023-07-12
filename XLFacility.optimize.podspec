@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'GCDTelnetServer' do |cs|
-    cs.dependency 'XLFacility/GCDNetworking'
+    cs.dependency 'XLFacility.optimize/GCDNetworking'
     cs.source_files = 'GCDTelnetServer/GCDTelnetServer/*.{h,m}'
     cs.private_header_files = "GCDTelnetServer/GCDTelnetServer/*Private.h"
     cs.requires_arc = true
@@ -45,14 +45,14 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Networking' do |cs|
-    cs.dependency 'XLFacility/Core'
-    cs.dependency 'XLFacility/GCDTelnetServer'
+    cs.dependency 'XLFacility.optimize/Core'
+    cs.dependency 'XLFacility.optimize/GCDTelnetServer'
     cs.source_files = 'XLFacility/Networking/*.{h,m}'
     cs.requires_arc = true
   end
 
   s.subspec 'UserInterface' do |cs|
-    cs.dependency 'XLFacility/Core'
+    cs.dependency 'XLFacility.optimize/Core'
     cs.source_files = 'XLFacility/UserInterface/*.{h,m}'
     cs.ios.exclude_files = 'XLFacility/UserInterface/XLAppKitOverlayLogger.{h,m}'
     cs.osx.exclude_files = 'XLFacility/UserInterface/XLUIKitOverlayLogger.{h,m}'
