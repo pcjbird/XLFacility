@@ -7,11 +7,12 @@
 
 Pod::Spec.new do |s|
   s.name     = 'XLFacility.optimize'
-  s.version  = '1.5.19'
+  s.version  = '1.5.20'
   s.author   =  { 'Pierre-Olivier Latour' => 'info@pol-online.net' }
   s.license  = { :type => 'BSD', :file => 'LICENSE' }
   s.homepage = 'https://github.com/pcjbird/XLFacility'
   s.summary  = 'Elegant and extensive logging facility for OS X & iOS (includes database, Telnet and HTTP servers)'
+  s.module_name = 'XLFacility'
 
   s.source   = { :git => 'https://github.com/pcjbird/XLFacility.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
