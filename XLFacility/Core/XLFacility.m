@@ -94,7 +94,7 @@ static void _ExitHandler() {
 
     XLSharedFacility = [[XLFacility alloc] init];
 
-    atexit(_ExitHandler);
+    //atexit(_ExitHandler);
   }
 }
 
